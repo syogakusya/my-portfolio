@@ -13,16 +13,16 @@ const Header = () => {
         </Link>
         <ul className="flex space-x-4">
           <li>
-            <Link href="/">ホーム</Link>
+            <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="/about">自己紹介</Link>
+            <Link href="/works">Works</Link>
           </li>
           <li>
-            <Link href="/projects">プロジェクト</Link>
+            <Link href="/blogs">Blogs</Link>
           </li>
           <li>
-            <Link href="/contact">お問い合わせ</Link>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
