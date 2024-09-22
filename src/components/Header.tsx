@@ -16,9 +16,9 @@ const notoSansJP = Noto_Sans_JP({
 const Header = () => {
   return (
     <header
-      className={`${notoSansJP.variable} bg-white text-gray-800 pb-0 pt-8 border-b-4 border-black px-0 h-[140px]`}
+      className={`${notoSansJP.variable} bg-white text-gray-800 py-8 border-b-4 border-black h-[140px]`}
     >
-      <nav className="mx-0 px-12 flex flex-col md:flex-row items-center justify-between md:items-end">
+      <nav className="mx-0 px-12 flex flex-col md:flex-row items-center justify-between md:items-center">
         <div className="flex items-end mb-4 md:mb-0 mx-8">
           <Link
             href="/"
