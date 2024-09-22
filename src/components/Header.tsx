@@ -16,27 +16,29 @@ const notoSansJP = Noto_Sans_JP({
 const Header = () => {
   return (
     <header
-      className={`${notoSansJP.variable} bg-white text-gray-800 py-8 border-b-4 border-black h-[140px]`}
+      className={`${notoSansJP.variable} bg-white text-gray-800 border-b-4 border-black h-[140px] flex items-center`}
     >
-      <nav className="mx-0 px-12 flex flex-col md:flex-row items-center justify-between md:items-center">
-        <div className="flex items-end mb-4 md:mb-0 mx-8">
+      <nav className="w-full mx-0 flex flex-col md:flex-row items-center md:items-end justify-between">
+        <div className="flex flex-col md:flex-row items-center md:items-end">
           <Link
             href="/"
-            className="text-xl font-bold flex flex-col items-center md:items-start mb-2 md:mb-0"
+            className="text-xl font-bold flex flex-col items-center md:items-start ml-4 md:ml-8"
           >
-            <div className="flex justify-between w-full">
-              <span className="text-sm md:text-base text-gray-500">
+            <div className="md:flex justify-between w-full hidden">
+              <span className="text-[0.35rem] sm:text-xs md:text-sm text-gray-500">
                 Artisan
               </span>
-              <span className="text-sm md:text-base text-gray-500">
+              <span className="text-[0.35rem] sm:text-xs md:text-sm text-gray-500">
                 SaikyoTsuchidaZ
               </span>
             </div>
-            <span className={`text-5xl md:text-6xl ${DelaGothicOne.className}`}>
+            <span
+              className={`text-4xl lg:text-5xl ${DelaGothicOne.className} whitespace-nowrap`}
+            >
               最強つちだズ
             </span>
           </Link>
-          <div className="mx-8 px-4 text-xs md:text-sm sm:text-[0.65rem] text-gray-500 mt-2 flex-col items-center md:items-start max-w-full md:max-w-[30%] hidden md:flex">
+          <div className="mx-8 px-4 text-xs md:text-[0.55rem] sm:text-[0.35rem] text-gray-500 flex-col items-center md:items-start max-w-full md:max-w-[30%] hidden lg:flex">
             <p className="whitespace-nowrap overflow-hidden text-ellipsis">
               This is my portfolio site, where I showcase my work as an artisan
             </p>
@@ -48,7 +50,7 @@ const Header = () => {
             </p>
           </div>
         </div>
-        <ul className="flex space-x-10 md:space-x-20 xl:space-x-32 xl:text-3xl justify-center md:justify-end font-bold text-lg md:text-xl mx-32">
+        <ul className="flex space-x-2 sm:space-x-4 md:space-x-8 xl:space-x-12 xl:text-3xl justify-center font-bold text-lg md:text-xl xl:mx-16 md:mx-8 mx-4">
           <li>
             <Link
               href="/about"
