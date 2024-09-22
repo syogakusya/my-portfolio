@@ -9,7 +9,7 @@ interface ProfileProps {
 
 const Profile: React.FC<ProfileProps> = ({ imageUrl, name, bio }) => {
   return (
-    <div className="w-full border-b-4 border-black p-24">
+    <div className="w-full border-b-4 border-black p-12 flex flex-col items-center">
       <div className="flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-6 max-w-7xl mx-auto">
         <div className="mb-6 md:mb-0 md:mr-8">
           <Image
@@ -33,6 +33,12 @@ const Profile: React.FC<ProfileProps> = ({ imageUrl, name, bio }) => {
           <p className="text-gray-700 text-lg">{bio}</p>
         </div>
       </div>
+      <Link
+        href="/about"
+        className="items-center mt-8 border-2 border-gray-600 rounded-lg px-6 py-4 text-white hover:opacity-90 transition-opacity duration-300 bg-gradient-to-r from-gray-700 to-gray-500"
+      >
+        View Details
+      </Link>
     </div>
   );
 };

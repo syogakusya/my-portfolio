@@ -17,7 +17,8 @@ export const events: Event[] = [
   {
     side: "right",
     year: "2022/4-現在",
-    title: "芝浦工業大学デザイン工学部ロボティクス情報デザイン学科に所属",
+    title: "芝浦工業大学デザイン工学部",
+    supplement: "ロボティクス情報デザイン学科に所属",
     color: "",
   },
   {
