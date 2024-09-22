@@ -14,7 +14,6 @@ export type Tag =
   | "クリエイティブコーディング"
   | "インタラクティブアート"
   | "ゲーム"
-  | "画像処理"
   | "OpenCV"
   | "Unity"
   | "Shader"
@@ -30,7 +29,18 @@ export type Tag =
   | "openFrameworks"
   | "ハッカソン"
   | "個人製作"
-  | "チーム開発";
+  | "チーム開発"
+  | "AR"
+  | "Vuforia"
+  | "Blender"
+  | "3Dモデリング"
+  | "Boidアルゴリズム"
+  | "OSC通信"
+  | "プロジェクションマッピング"
+  | "コンピュータビジョン"
+  | "Arduino"
+  | "センサー技術"
+  | "サウンドアート";
 
 export type Work = {
   id: string;
@@ -49,4 +59,16 @@ export type Skill = {
   level: number;
   name: string;
   imageUrl: string;
+};
+
+export type Event = {
+  side: "left" | "right";
+  year: number | string;
+  title: string;
+  content?: string | React.ReactNode;
+  icon?: string;
+  supplement?: string;
+  color?: string;
+  workId?: string;
+  href?: string;
 };
