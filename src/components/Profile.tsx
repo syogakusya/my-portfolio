@@ -17,7 +17,7 @@ const Profile: React.FC<ProfileProps> = ({ imageUrl, name, bio }) => {
             alt={name}
             width={600}
             height={600}
-            className="rounded-full mb-4"
+            className="rounded-full object-cover object-center mb-4"
           />
           <div className="flex justify-center">
             <Link

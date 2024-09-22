@@ -10,7 +10,6 @@ export default function Home() {
         name="土田悠太 / 最強つちだズ"
         bio="芝浦工業大学デザイン工学部ロボティクス情報デザイン学科に所属しています。ゲーム制作やインタラクティブアート、クリエイティブコーディングなどのプログラミングで面白いことをするのに興味があり、様々なプロジェクトに取り組んでいます。"
       />
-      <h1 className="text-3xl font-bold text-center mb-8">私の経歴</h1>
       <Timeline />
     </div>
   );

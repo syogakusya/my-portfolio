@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Timeline: React.FC = () => {
   return (
-    <div className="relative container mx-auto px-6 flex flex-col space-y-8">
+    <div className="relative container mx-auto px-6 flex flex-col space-y-8 py-24">
       <div className="absolute z-0 w-1 h-full bg-gray-200 left-1/2 transform -translate-x-1/2"></div>
       {events.map((event: Event, index: number) => (
         <div key={index} className="relative z-10">
