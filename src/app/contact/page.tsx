@@ -8,8 +8,8 @@ const Contact = () => {
           Twitter:{" "}
           <a
             href="https://twitter.com/tsuchida_z"
-            target="_blank"
-            rel="noopener noreferrer"
+            target="_self"
+            rel="nofollow"
           >
             @tsuchida_z
           </a>
@@ -18,8 +18,8 @@ const Contact = () => {
           Wantedly:{" "}
           <a
             href="https://www.wantedly.com/id/saikyou_tsuchidaz"
-            target="_blank"
-            rel="noopener noreferrer"
+            target="_self"
+            rel="nofollow"
           >
             @saikyou_tsuchidaz
           </a>
@@ -28,8 +28,8 @@ const Contact = () => {
           GitHub:{" "}
           <a
             href="https://github.com/syogakusya"
-            target="_blank"
-            rel="noopener noreferrer"
+            target="_self"
+            rel="nofollow"
           >
             @syogakusya
           </a>
