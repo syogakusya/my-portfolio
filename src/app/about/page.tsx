@@ -6,24 +6,20 @@ import { awards, affiliations } from "@/data";
 const AboutPage = () => {
   return (
     <div className="w-full">
-      <h1 className="text-4xl font-bold mb-8">About Me</h1>
+      <div className="p-12 border-b-4 border-black flex flex-col items-center">
+        <h1 className="text-4xl font-bold mb-12">About Me</h1>
+        <Profile
+          imageUrl="/image.png"
+          name="土田悠太 / 最強つちだズ"
+          bio="芝浦工業大学デザイン工学部ロボティクス情報デザイン学科に所属しています。ゲーム制作やインタラクティブアート、クリエイティブコーディングなどのプログラミングで面白いことをするのに興味があり、様々なプロジェクトに取り組んでいます。"
+        />
+      </div>
 
-      <Profile
-        imageUrl="/image.png"
-        name="土田悠太 / 最強つちだズ"
-        bio="芝浦工業大学デザイン工学部ロボティクス情報デザイン学科に所属しています。ゲーム制作やインタラクティブアート、クリエイティブコーディングなどのプログラミングで面白いことをするのに興味があり、様々なプロジェクトに取り組んでいます。"
-      />
-
-      <section className="my-12">
-        <h2 className="text-2xl font-bold mb-4">経歴</h2>
-        <Timeline />
-      </section>
-
-      <section className="my-12">
-        <h2 className="text-2xl font-bold mb-4">所属</h2>
-        <ul className="list-disc list-inside">
+      <section className="p-12 border-b-4 border-black flex flex-col items-center">
+        <h2 className="text-4xl font-bold mb-8">Affiliations</h2>
+        <ul className="list-none text-center">
           {affiliations.map((affiliation, index) => (
-            <li key={index} className="mb-2">
+            <li key={index} className="mb-2 text-lg">
               <a
                 href={affiliation.link}
                 target="_blank"
@@ -37,15 +33,20 @@ const AboutPage = () => {
         </ul>
       </section>
 
-      <section className="my-12">
-        <h2 className="text-2xl font-bold mb-4">受賞歴</h2>
-        <ul className="list-disc list-inside">
+      <section className="py-12 border-b-4 border-black flex flex-col items-center">
+        <h2 className="text-4xl font-bold mb-8">Awards</h2>
+        <ul className="list-none">
           {awards.map((award, index) => (
-            <li key={index} className="mb-2">
+            <li key={index} className="mb-2 text-lg">
               {award}
             </li>
           ))}
         </ul>
+      </section>
+
+      <section className="py-12 border-b-4 border-black flex flex-col items-center">
+        <h2 className="text-4xl font-bold mb-8">Experience</h2>
+        <Timeline />
       </section>
     </div>
   );
