@@ -38,7 +38,7 @@ const Header = () => {
               最強つちだズ
             </span>
           </Link>
-          <div className="mx-8 px-4 text-xs md:text-[0.55rem] sm:text-[0.35rem] text-gray-500 flex-col items-center md:items-start max-w-full md:max-w-[30%] hidden lg:flex">
+          <div className="mx-2 px-4 text-xs md:text-[0.55rem] sm:text-[0.35rem] text-gray-500 flex-col items-center md:items-start max-w-full md:max-w-[30%] hidden lg:flex">
             <p className="whitespace-nowrap overflow-hidden text-ellipsis">
               This is my portfolio site, where I showcase my work as an artisan
             </p>

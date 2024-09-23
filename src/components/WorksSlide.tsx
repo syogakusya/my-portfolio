@@ -2,12 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Navigation,
-  Pagination,
-  EffectCoverflow,
-  Autoplay,
-} from "swiper/modules";
+import { Pagination, EffectCoverflow, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -18,7 +13,7 @@ import { works } from "../data/works";
 
 export default function SwiperComponent() {
   return (
-    <div className="border-b-4 border-black">
+    <div className="border-b-4 border-black p-12">
       <Swiper
         className="w-full mySwiper"
         effect={"coverflow"}
@@ -56,7 +51,7 @@ export default function SwiperComponent() {
                     priority
                   />
                 )}
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                <div className="absolute bottom-0 left-0 right-0 bg-zinc-900 bg-opacity-40 text-white p-8">
                   <h3 className="text-xl font-bold">{work.title}</h3>
                   <p className="text-sm">{work.shortDescription}</p>
                 </div>
