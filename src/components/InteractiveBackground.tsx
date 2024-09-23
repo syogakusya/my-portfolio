@@ -2,7 +2,6 @@
 
 import React, { useRef, useEffect } from "react";
 import * as p5Types from "p5";
-import { Parisienne } from "next/font/google";
 
 class Particle {
   p: p5Types;
@@ -53,7 +52,7 @@ const InteractiveBackground = () => {
         const p5 = p5Module.default;
 
         const sketch = (p: p5Types) => {
-          let particles: Particle[] = [];
+          const particles: Particle[] = [];
           let prevMouseX = 0;
           let prevMouseY = 0;
           let particlesNum = 0;
