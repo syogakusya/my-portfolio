@@ -8,7 +8,8 @@ export default function Home() {
   return (
     <div>
       <WorksSlide />
-      <div className="w-full border-b-4 border-black p-12 flex flex-col items-center">
+      <section className="w-full border-b-4 border-black p-12 flex flex-col items-center">
+        <h2 className="text-4xl font-bold text-center mb-12">About</h2>
         <Profile
           imageUrl="/image.png"
           name="土田悠太 / 最強つちだズ"
@@ -20,12 +21,15 @@ export default function Home() {
         >
           View Details
         </Link>
-      </div>
-      <div className="p-12">
+      </section>
+      <section className="p-12 border-b-4 border-black">
         <h2 className="text-4xl font-bold text-center">Skills</h2>
         <Skills />
-      </div>
-      <Timeline />
+      </section>
+      <section className="py-12 border-b-4 border-black flex flex-col items-center">
+        <h2 className="text-4xl font-bold mb-12">Experience</h2>
+        <Timeline />
+      </section>
     </div>
   );
 }
