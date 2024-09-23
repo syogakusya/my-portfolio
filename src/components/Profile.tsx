@@ -9,7 +9,7 @@ interface ProfileProps {
 
 const Profile: React.FC<ProfileProps> = ({ imageUrl, name, bio }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center bg-white shadow-lg border-2 border-black rounded-lg p-6 max-w-7xl mx-auto">
+    <div className="flex flex-col md:flex-row items-center  shadow-lg border-2 border-black rounded-lg p-6 max-w-7xl mx-auto bg-white">
       <div className="mb-6 md:mb-0 md:mr-8">
         <Image
           src={imageUrl}

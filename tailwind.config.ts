@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      zIndex: {
+        'negative': '-1',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

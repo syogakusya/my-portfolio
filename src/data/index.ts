@@ -19,13 +19,13 @@ export const skills:Skill[] = [
   },*/
   {
     name: "Unity",
-    level: 3,
+    level: 5,
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-plain.svg",
     description: "ゲームやインタラクティブアート制作で使用"
   },
   {
     name: "Openframeworks",
-    level: 4,
+    level: 5,
     icon: "/openframeworks.png",
     description: ""
   },

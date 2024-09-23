@@ -2,16 +2,18 @@ import { skills } from "@/data";
 import Image from "next/image";
 
 const getColor = (level: number) => {
+  if (level >= 5) return "bg-blue-500";
   if (level >= 4) return "bg-green-500";
   if (level >= 3) return "bg-yellow-500";
   if (level >= 2) return "bg-orange-500";
+  if (level >= 1) return "bg-red-500";
   return "bg-red-500";
 };
 
 const Skills = () => {
   return (
     <div className="w-full py-12 px-36">
-      <div className="grid xl:grid-cols-5 lg:grid-cols-3 grid-cols-2 gap-4">
+      <div className="grid xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 bg-white">
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-row items-center p-2 ml-8">
             <Image
