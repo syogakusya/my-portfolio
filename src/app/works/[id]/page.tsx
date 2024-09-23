@@ -17,7 +17,7 @@ const WorkDetail = ({ params }: { params: { id: string } }) => {
 
   return (
     <div className="flex h-screen">
-      <div className="w-1/2 p-8 overflow-y-auto">
+      <div className="w-1/2 p-8 overflow-y-auto border-r-4 border-black">
         <h1 className="text-4xl font-bold mb-4">{work.title}</h1>
         <p className="text-lg mb-4">{work.longDescription}</p>
         <a href={work.githubUrl} className="text-blue-500 hover:underline">
@@ -29,9 +29,10 @@ const WorkDetail = ({ params }: { params: { id: string } }) => {
           <Image
             src={`/${work.imageUrls[0]}`}
             alt={work.title}
-            width={200}
-            height={200}
-            className="w-full h-auto object-cover"
+            layout="responsive"
+            width={700}
+            height={475}
+            className="object-cover"
           />
         )}
       </div>
