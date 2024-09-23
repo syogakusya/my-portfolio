@@ -8,9 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      zIndex: {
+        'negative': '-1',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        sans: ["var(--font-noto-sans-jp)", "sans-serif"],
       },
     },
   },
