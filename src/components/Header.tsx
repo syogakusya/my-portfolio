@@ -38,7 +38,7 @@ const Header = () => {
               最強つちだズ
             </span>
           </Link>
-          <div className="mx-2 px-4 text-xs md:text-[0.55rem] sm:text-[0.35rem] text-gray-500 flex-col items-center md:items-start max-w-full md:max-w-[30%] hidden lg:flex">
+          <div className="mx-2 px-4 text-xs md:text-[0.55rem] sm:text-[0.35rem] text-gray-900 flex-col items-center md:items-start max-w-full md:max-w-[30%] hidden lg:flex">
             <p className="whitespace-nowrap overflow-hidden text-ellipsis">
               This is my portfolio site, where I showcase my work as an artisan
             </p>
@@ -51,6 +51,11 @@ const Header = () => {
           </div>
         </div>
         <ul className="flex space-x-2 sm:space-x-4 md:space-x-8 xl:space-x-12 xl:text-3xl justify-center font-bold text-lg md:text-xl xl:mx-16 md:mx-8 mx-4">
+          <li>
+            <Link href="/" className="hover:text-gray-600 transition-colors">
+              Home
+            </Link>
+          </li>
           <li>
             <Link
               href="/about"

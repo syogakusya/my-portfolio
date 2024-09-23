@@ -55,10 +55,10 @@ export type Work = {
 };
 
 export type Skill = {
-  id: number;
-  level: number;
   name: string;
-  imageUrl: string;
+  level: number;
+  icon: string;
+  description: string;
 };
 
 export type Event = {

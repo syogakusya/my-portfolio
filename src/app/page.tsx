@@ -2,6 +2,7 @@ import WorksSlide from "@/components/WorksSlide";
 import Timeline from "@/components/Timeline";
 import Profile from "@/components/Profile";
 import Link from "next/link";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -19,6 +20,10 @@ export default function Home() {
         >
           View Details
         </Link>
+      </div>
+      <div className="p-12">
+        <h2 className="text-4xl font-bold text-center">Skills</h2>
+        <Skills />
       </div>
       <Timeline />
     </div>
