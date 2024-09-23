@@ -12,20 +12,23 @@ const getColor = (level: number) => {
 
 const Skills = () => {
   return (
-    <div className="w-full py-12 px-36">
+    <div className="w-full py-12 px-12 md:px-36">
       <div className="grid xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 bg-white">
         {skills.map((skill, index) => (
-          <div key={index} className="flex flex-row items-center p-2 ml-8">
+          <div
+            key={index}
+            className="flex sm:flex-row flex-col items-start p-2 sm:ml-8 ml-0 sm:m-0 m-4"
+          >
             <Image
               src={skill.icon}
               alt={skill.name}
               width={60}
               height={60}
-              className="mr-4"
-            />
-            <div className="flex flex-col">
+              className="mr-4 block sm:block"
+            ></Image>
+            <div className="flex flex-col w-full">
               <h3 className="">{skill.name}</h3>
-              <div className="w-36 bg-gray-200 h-2 mt-1">
+              <div className="w-5/6 bg-gray-200 h-2 mt-1">
                 <div
                   className={`h-2 ${getColor(skill.level)}`}
                   style={{ width: `${(skill.level / 5) * 100}%` }}
