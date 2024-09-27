@@ -27,6 +27,7 @@ class Particle {
   }
 
   update() {
+    this.randomWalk();
     this.x += this.xSpeed;
     this.y += this.ySpeed;
     this.lifespan -= 5;
@@ -40,6 +41,23 @@ class Particle {
 
   finished() {
     return this.lifespan < 0;
+  }
+
+  randomWalk() {
+    const angle = this.p.random(this.p.TWO_PI);
+    const step = this.p.random(0.5, 2);
+    this.xSpeed += this.p.cos(angle) * step;
+    this.ySpeed += this.p.sin(angle) * step;
+
+    // 速度の上限を設定
+    const maxSpeed = 5;
+    const speed = this.p.sqrt(
+      this.xSpeed * this.xSpeed + this.ySpeed * this.ySpeed
+    );
+    if (speed > maxSpeed) {
+      this.xSpeed = (this.xSpeed / speed) * maxSpeed;
+      this.ySpeed = (this.ySpeed / speed) * maxSpeed;
+    }
   }
 }
 
@@ -88,7 +106,7 @@ const InteractiveBackground = () => {
             const speed = p.random(2, 5);
             const xSpeed = p.cos(angle) * speed;
             const ySpeed = p.sin(angle) * speed;
-            if (particlesNum > 3) {
+            if (particlesNum > 2) {
               particles.push(
                 new Particle(p, p.mouseX, p.mouseY, xSpeed, ySpeed)
               );
@@ -109,6 +127,12 @@ const InteractiveBackground = () => {
               particles.push(
                 new Particle(p, p.mouseX, p.mouseY, xSpeed, ySpeed)
               );
+            }
+          };
+
+          p.keyPressed = () => {
+            if ((p.key = "c")) {
+              p.clear();
             }
           };
         };
