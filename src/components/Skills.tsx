@@ -13,7 +13,7 @@ const getColor = (level: number) => {
 const Skills = () => {
   return (
     <div className="w-full py-12 px-12 md:px-36">
-      <div className="grid xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 bg-white">
+      <div className="grid xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
         {skills.map((skill, index) => (
           <div
             key={index}
@@ -24,7 +24,7 @@ const Skills = () => {
               alt={skill.name}
               width={60}
               height={60}
-              className="mr-4 block sm:block"
+              className="mr-4 block"
             ></Image>
             <div className="flex flex-col w-full">
               <h3 className="">{skill.name}</h3>
