@@ -64,6 +64,10 @@ const InteractiveBackground = () => {
             prevMouseY = p.mouseY;
           };
 
+          p.windowResized = () => {
+            p.resizeCanvas(p.windowWidth, p.windowHeight);
+          };
+
           p.draw = () => {
             p.clear();
             for (let i = particles.length - 1; i >= 0; i--) {
