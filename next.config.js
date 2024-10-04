@@ -2,14 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'swiperjs.com',
-        pathname: '/demos/images/**',
-      },
-    ],
+    unoptimized: true,
+    domains: ['localhost', 'tsuchidas0814.com']
   },
+  output: "export",
 }
 
 module.exports = nextConfig
